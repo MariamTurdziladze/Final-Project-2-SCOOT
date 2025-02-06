@@ -73,7 +73,27 @@
 }
 
 
-
+.page-title-box{
+    height: 200px;
+    background-image: url(./images/other\ page\ title\ backgrounds.png);
+}
+.page-title-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 165px;
+    background: rgba(47, 59, 89, 0.75);
+}
+.page-title{
+    color: #FFF;
+font-family: "Space Mono";
+font-size: 56px;
+font-weight: 700;
+line-height: 56px;
+letter-spacing: -2.5px;
+}
 
 
 
