@@ -255,32 +255,21 @@ overflow: hidden;
 }
 
 
-
-.social {
-    display: grid;
-    grid-template-columns: repeat(3, 24px);
-    gap: 24px;
-    justify-content: center;
+.footer-right{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .social__link {
-    display: block;
-    width: 24px;
-    height: 24px;
-    color: var(--yellow);
-    outline: none;
-  }
-  
-  .social__link--twitter {
-    height: 19px;
-  }
-  
-  .social__link:hover,
-  .social__link:focus {
-    color: white;
-  }
-  
+    width: 120px;
+}
+
+.fb:hover svg path {
+    fill: #E5ECF4;
+}
+.twt:hover svg path {
+    fill: #E5ECF4;
+}
+
+.ig:hover svg path {
+    fill: #E5ECF4;
+}
+
