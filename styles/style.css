@@ -69,6 +69,7 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 25px; 
+    transition: all 0.3s ease-in-out;
 }
 .btn:hover{
     cursor: pointer;
@@ -251,33 +252,10 @@ line-height: 25px;
     width: 445px;
 }
 
-.p1b3-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 53px;
-    background: #FCB72B;
-    color: #FFF;
-    text-align: center;
-    font-family: "Space Mono";
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 25px; 
-}
-
-.p1b3-box:hover {
-    cursor: pointer;
-    color: #FCB72B;
-    background-color: white;
-    border: 3px solid #FCB72B;
-}
-
 .p1b3c1-right {
     display: flex;
     flex-direction: column;
 }
-
 
 .p1b4 {
     display: flex;
