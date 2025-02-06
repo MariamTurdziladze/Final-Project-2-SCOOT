@@ -38,17 +38,22 @@
     align-items: center;
     gap: 32px;
 }
-.header-navigation a {
+.nav-link {
     color: #939CAA;
     font-family: "Space Mono";
     font-size: 15px;
     font-weight: 700;
     line-height: 25px;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
-.header-navigation a:hover {
+
+.nav-link:hover {
     color: #FCB72B;
-    cursor: pointer;
+    cursor: pointer;}
+
+.active-link {
+    color: #FCB72B !important;
 }
 .btn {
     width: 180px;
@@ -420,23 +425,24 @@ overflow: hidden;
     align-items: center;
     gap: 32px;
 }
-
-.footer-navigation a {
+.footer-link {
     color: #939CAA;
     font-family: "Space Mono";
     font-size: 15px;
     font-weight: 700;
     line-height: 25px;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-.footer-navigation a:hover {
+.footer-link:hover {
     color: #FCB72B;
     cursor: pointer;
 }
 
-
-
+.active-footer-link {
+    color: #FCB72B !important;
+}
 
 .footer-right{
     display: flex;
