@@ -101,10 +101,43 @@ line-height: 56px;
 letter-spacing: -2.5px;
 }
 
+.map-section {
+    padding: 120px 0 122px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map {
+    width: 1110px;
+    height: 543px;
+}
 
-
-
-
+.contact{
+    padding: 0 165px 120px 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-txts{
+    display: flex;
+    gap: 30px;
+}
+.contact-txt1{
+    max-width: 351px;
+    color: #495567;
+font-family: "Space Mono";
+font-size: 48px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -2.143px;
+}
+.contact-txt2{
+    max-width: 445px;
+    color: #939CAA;
+font-family: "Lexend Deca";
+font-size: 15px;
+line-height: 25px;
+}
 
 .footer{
 }
