@@ -81,6 +81,7 @@
 .page-title-box{
     height: 200px;
     background-image: url(./images/about\ title\ background.png);
+    background-size: cover;
 }
 .page-title-content{
     width: 100%;
