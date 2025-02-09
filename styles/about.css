@@ -19,6 +19,7 @@
     height: 96px;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     align-items: center;
     padding-right: 165px;
     padding-left: 169px;
@@ -159,11 +160,11 @@ letter-spacing: -2.5px;
 
 .faq{
     display: flex;
-    gap: 30px;
+    gap: 107px;
 }
 
 .faq-title{
-    width: 350px;
+    min-width: 273px;
     color: #495567;
 font-family: "Space Mono";
 font-size: 40px;
@@ -175,7 +176,7 @@ letter-spacing: -1.786px;
 .accordion-container{
     display: flex;
     flex-direction: column;
-    width: 730px;
+    max-width: 730px;
     gap: 16px;
 }
 
@@ -205,6 +206,7 @@ letter-spacing: -1.786px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    gap: 25px;
     align-items: center;
     color: #FCB72B;
 }
@@ -241,6 +243,7 @@ letter-spacing: -1.071px;
 .footer-top{
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     align-items: center;
     height: 300px;
     background: #495567;
@@ -251,6 +254,7 @@ letter-spacing: -1.071px;
 }
 
 .footer-top-txt{
+    position: relative;
     width: 415px;
     color: #FFF;
     font-family: "Space Mono";
@@ -412,3 +416,66 @@ overflow: hidden;
     fill: #E5ECF4;
 }
 
+@media only screen and (max-width: 1440px) {
+    .faqs{
+        align-items: center;
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+    .faq{
+        gap: 60px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+
+
+    .footer-ovals{
+        left: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .header{
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+    
+    .footer-top{
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+    .footer-bottom{
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    .header{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .faqs{
+        padding: 60px 40px 160px 40px;
+    }
+
+    .footer-ovals{
+        left: -200px;
+    }
+    .footer-top{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .footer-bottom{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+}

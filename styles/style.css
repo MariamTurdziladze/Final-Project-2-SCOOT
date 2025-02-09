@@ -19,6 +19,7 @@
     height: 96px;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     align-items: center;
     padding-right: 165px;
     padding-left: 169px;
@@ -161,11 +162,11 @@ line-height: 25px;
 }
 .p1b2-line{
     position: absolute;
-    bottom: 250px;
-    width: 974px;
-    height: 1px;
+    top: 201px;
+    width: 65%;
+    height: 15px;
     stroke-width: 15px;
-    stroke: #E5ECF4;
+    background: #E5ECF4;
 }
 .p1b2-box-container{
     display: flex;
@@ -187,7 +188,7 @@ height: 96px;
     display: flex;
     flex-direction: column;
     gap: 27px;
-    width: 350px;
+    max-width: 350px;
 }
 .p1b2-txt1{
     color: #495567;
@@ -265,12 +266,11 @@ line-height: 25px;
     background-color: green;
 }
 
-.footer{
-}
 
 .footer-top{
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     align-items: center;
     height: 300px;
     background: #495567;
@@ -281,6 +281,7 @@ line-height: 25px;
 }
 
 .footer-top-txt{
+    position: relative;
     width: 415px;
     color: #FFF;
     font-family: "Space Mono";
@@ -326,7 +327,7 @@ letter-spacing: -0.446px;
 font-family: "Space Mono";
 font-size: 20px;
 font-weight: 700;
-line-height: 24px; /* 120% */
+line-height: 24px;
 letter-spacing: -0.893px;
 }
 
@@ -425,9 +426,8 @@ overflow: hidden;
 
 .footer-right{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 120px;
+    gap: 24px;
 }
 
 .fb:hover svg path {
@@ -441,3 +441,53 @@ overflow: hidden;
     fill: #E5ECF4;
 }
 
+@media only screen and (max-width: 1400px) {
+
+    .footer-ovals{
+        left: 100px;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .header{
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+    .p1b2-box-container{
+        gap: 50px;
+    }
+    .footer-top{
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+    .footer-bottom{
+        padding-right: 65px;
+        padding-left: 65px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .header{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .footer-ovals{
+        left: 0px;
+    }
+    .footer-top{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .footer-bottom{
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+}
