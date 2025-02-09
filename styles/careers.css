@@ -144,6 +144,7 @@ letter-spacing: -2.5px;
     height: 56px;
     border-radius: 4px;
     background: #E5ECF4;
+    user-select: none;
 }
 .appstore-txts{
     display: flex;

@@ -169,6 +169,7 @@ line-height: 25px;
 }
 
 .appstore{
+    user-select: none;
     z-index: 1000;
     display: flex;
     justify-content: center;
