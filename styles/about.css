@@ -140,9 +140,7 @@ letter-spacing: -2.5px;
 }
 
 .faqs{
-    padding-top: 60px;
-    padding-right: 165px;
-    padding-left: 165px;
+    padding: 60px 165px 160px 165px;
     display: flex;
     flex-direction: column;
     gap: 64px;
