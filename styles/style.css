@@ -254,7 +254,40 @@ line-height: 25px;
 
 .p1b3c1-right {
     display: flex;
-    flex-direction: column;
+    position: relative;
+    max-width: 1079px;
+    gap: 64px;
+}
+
+.b3-circle1 {
+    display: flex;
+    right: 0;
+}
+
+.b3-arrow1 {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.b3-circle2 {
+    display: flex;
+    left: 0;
+}
+
+.b3-arrow2 {
+    display: flex;
+    position: absolute;
+    bottom: 68%;
+    left: 0;
+}
+
+.b3-arrow3 {
+    display: flex;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
 }
 
 .p1b4 {
