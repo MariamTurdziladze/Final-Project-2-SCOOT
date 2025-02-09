@@ -184,7 +184,7 @@ letter-spacing: -1.071px;
     display: flex;
     flex-direction: column;
     gap: 27px;
-    width: 350px;
+    max-width: 350px;
 }
 
 .our1-p{
@@ -444,6 +444,15 @@ overflow: hidden;
 
 @media only screen and (max-width: 1400px) {
 
+    .our3{
+        padding-right: 40px;
+        padding-left: 40px;
+        justify-content: center;
+    }
+    .our3-container{
+        justify-content: center;
+    }
+
     .footer-ovals{
         left: 100px;
     }
@@ -471,6 +480,10 @@ overflow: hidden;
     .header{
         padding-right: 40px;
         padding-left: 40px;
+    }
+    .our3-container{
+        flex-direction: column;
+        gap: 55px;
     }
     .jobs-list{
         padding-right: 40px;
