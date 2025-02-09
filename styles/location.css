@@ -219,6 +219,8 @@ letter-spacing: -0.893px;
 }
 
 .playstore{
+    user-select: none;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,6 +323,43 @@ overflow: hidden;
 
 .ig:hover svg path {
     fill: #E5ECF4;
+}
+
+@media only screen and (min-width: 1800px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .header{
+        width: 1800px;
+    }
+    .page-title-content{
+        width: 1800px;
+        height: 200px;
+    }
+    .map-section{
+        width: 1800px;
+        height: 1000px;
+    }
+    .map{
+        width: 90%;
+        height: 90%;
+    }
+    .contact{
+        width: 1800px;
+    }
+    .footer{
+        width: 1800px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .contact{
+        justify-content: center;
+        gap: 107px;
+    }
 }
 
 @media only screen and (max-width: 1440px) {

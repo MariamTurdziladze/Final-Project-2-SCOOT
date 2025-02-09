@@ -111,6 +111,7 @@ letter-spacing: -2.5px;
 .section-2-box{
  width:100%;  
  display: flex;
+ justify-content: end;
  align-items: center;
 }
 .section-2-texts{
@@ -404,6 +405,8 @@ letter-spacing: -0.893px;
 }
 
 .playstore{
+    user-select: none;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -510,6 +513,46 @@ overflow: hidden;
     fill: #E5ECF4;
 }
 
+@media only screen and (min-width: 1800px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .header{
+        width: 1800px;
+    }
+    .page-title-content{
+        width: 1800px;
+        height: 200px;
+    }
+    .section-2{
+        width: 1800px;
+    }
+    .our3{
+        width: 1800px;
+    }
+    .our3-container{
+        gap: 100px;
+    }
+    .faqs{
+        width: 1800px;
+    }
+    .footer{
+        width: 1800px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .our3-container{
+        justify-content: center;
+    }
+    .faq{
+        justify-content: center;
+    }
+
+}
 @media only screen and (max-width: 1440px) {
     
     .our3{
