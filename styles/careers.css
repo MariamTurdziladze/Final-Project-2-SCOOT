@@ -115,7 +115,7 @@ letter-spacing: -2.5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1110px;
+    max-width: 1110px;
     height: 128px;
     background: #F2F5F9;
 }
