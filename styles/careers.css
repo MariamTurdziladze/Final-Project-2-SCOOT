@@ -102,9 +102,72 @@ letter-spacing: -2.5px;
 }
 
 
+.jobs-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 165px;
+    gap: 24px;
+}
 
+.list-el {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1110px;
+    height: 128px;
+    background: #F2F5F9;
+}
 
+.list-el-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 40px;
+    gap: 8px;
+}
+.list-el-title {
+    color: #495567;
+    font-family: "Space Mono";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.071px;
+}
 
+.list-el-name {
+    color: #495567;
+    font-family: "Lexend Deca";
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.list-right {
+    padding-right: 64px;
+}
+
+.list-right-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 53px;
+    background: #FCB72B;
+    color: #FFF;
+    text-align: center;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.list-right-text:hover {
+    cursor: pointer;
+    background: transparent;
+    color: #FCB72B;
+    border: 3px solid #FCB72B;
+}
 
 .footer{
 }
