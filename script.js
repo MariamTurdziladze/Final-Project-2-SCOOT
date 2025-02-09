@@ -19,3 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+// ACCORDION
+document.body.addEventListener(`click`, (ev) => {
+    const isExpandableTitle = !!ev.target.closest(".accordion");  // mxolod titles magivrad mtliani boxia
+    const expandable = ev.target.closest(".accordion");
+
+    if (!isExpandableTitle) {
+        return
+    }
+    expandable.classList.toggle("accordion-open")
+})
+
