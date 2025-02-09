@@ -131,8 +131,6 @@ line-height: 25px;
     position: absolute;
     bottom: 44.30769230769231%;
     background-image: url(./SVGs/p1b1-\ yellow\ line\ left.svg);
-    stroke-width: 15px;
-    stroke: #FCB72B;
 }
 
 .p1b1-img2{
@@ -143,8 +141,6 @@ line-height: 25px;
     height: 153px;
     background-image: url(./SVGs/twisted\ yellow\ arrow.svg);
     background-repeat: no-repeat;
-    stroke-width: 15px;
-    stroke: #FCB72B;
 }
 .p1b1-img3{
     position: absolute;
@@ -159,13 +155,13 @@ line-height: 25px;
 .p1b2 {
     padding-top: 160px;
     position: relative;
+    padding-bottom: 100px;
 }
 .p1b2-line{
     position: absolute;
     top: 201px;
     width: 65%;
     height: 15px;
-    stroke-width: 15px;
     background: #E5ECF4;
 }
 .p1b2-box-container{
@@ -370,6 +366,8 @@ letter-spacing: -0.893px;
 }
 
 .playstore{
+    user-select: none;
+    z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -472,6 +470,45 @@ overflow: hidden;
 
 .ig:hover svg path {
     fill: #E5ECF4;
+}
+
+
+@media only screen and (min-width: 1800px) {
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    .header{
+        width: 1800px;
+    }
+    .p1b1{
+        width: 1800px;
+    }
+    .p1b1-content{
+        height: 650px;
+    }
+    .p1b2{
+        width: 1800px;
+    }
+    .p1b3{
+        width: 1800px;
+    }
+    .footer{
+        padding-top: 100px;
+        width: 1800px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .p1b2-line{
+        width: 1059px;
+    }
+    .p1b2-box-container{
+        padding-left: 265px;
+    }
+
 }
 
 @media only screen and (max-width: 1400px) {
