@@ -589,6 +589,9 @@ overflow: hidden;
         padding-right: 65px;
         padding-left: 65px;
     }
+    .page-title-content{
+        padding-left: 65px;
+    }
     
     .footer-top{
         padding-right: 65px;
@@ -604,6 +607,9 @@ overflow: hidden;
 @media only screen and (max-width: 1024px) {
     .header{
         padding-right: 40px;
+        padding-left: 40px;
+    }
+    .page-title-content{
         padding-left: 40px;
     }
 
