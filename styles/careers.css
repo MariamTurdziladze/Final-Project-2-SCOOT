@@ -81,6 +81,7 @@
 .page-title-box{
     height: 200px;
     background-image: url(./images/other\ page\ title\ backgrounds.png);
+    background-size: cover;
 }
 .page-title-content{
     width: 100%;
@@ -207,6 +208,7 @@ letter-spacing: -2.5px;
     height: 56px;
     border-radius: 4px;
     background: #E5ECF4;
+    user-select: none;
 }
 .appstore-txts{
     display: flex;

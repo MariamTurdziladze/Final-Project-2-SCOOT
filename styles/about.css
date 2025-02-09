@@ -81,6 +81,7 @@
 .page-title-box{
     height: 200px;
     background-image: url(./images/about\ title\ background.png);
+    background-size: cover;
 }
 .page-title-content{
     width: 100%;
@@ -140,9 +141,7 @@ letter-spacing: -2.5px;
 }
 
 .faqs{
-    padding-top: 60px;
-    padding-right: 165px;
-    padding-left: 165px;
+    padding: 60px 165px 160px 165px;
     display: flex;
     flex-direction: column;
     gap: 64px;
@@ -275,6 +274,7 @@ letter-spacing: -1.071px;
     height: 56px;
     border-radius: 4px;
     background: #E5ECF4;
+    user-select: none;
 }
 .appstore-txts{
     display: flex;
