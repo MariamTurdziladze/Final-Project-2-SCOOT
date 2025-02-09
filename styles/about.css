@@ -139,6 +139,100 @@ letter-spacing: -2.5px;
  line-height: 25px;
 
 }
+.our3 {
+    padding: 60px 165px 60px 165px;
+    display: flex;
+    flex-direction: column;
+    gap: 103px;
+}
+
+.our3-title{
+    color: #495567;
+text-align: center;
+font-family: "Space Mono";
+font-size: 48px;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: -2.143px;
+}
+
+.our3-container{
+    display: flex;
+    gap: 30px;
+}
+
+.our1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.our1-img {
+    position: relative;
+    width: 240px;
+    height: 295px;
+}
+.our1-oval-img1{
+    position: absolute;
+    background: red;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-image: url(./images/holding\ a\ mobile.png);
+}
+.our1-oval-img2{
+    position: absolute;
+    background: red;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-image: url(./images/riding\ a\ scooter.png);
+}
+.our1-oval-img3{
+    position: absolute;
+    background: red;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-image: url(./images/people\ crossing\ a\ crosswalk.png);
+}
+.our1-oval-num{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background: #FCB72B;
+    bottom: 0;
+    left: 72.5px;
+}
+.our1-h1{
+    color: #495567;
+text-align: center;
+font-family: "Space Mono";
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: -1.071px;
+}
+
+.our1-txts{
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    width: 350px;
+}
+
+.our1-p{
+    color: #939CAA;
+text-align: center;
+font-family: "Lexend Deca";
+font-size: 15px;
+line-height: 25px;
+}
+
 
 .faqs{
     padding: 60px 165px 160px 165px;
