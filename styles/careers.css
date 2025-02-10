@@ -551,3 +551,63 @@ overflow: hidden;
 
 @media only screen and (max-width: 768px) {
 }
+
+
+
+@media (max-width:768px) {
+    .jobs-list {
+        padding: 120px 40px 120px 39px; 
+        gap: 16px;
+    }
+    
+    .list-el {
+        max-width: 689px;
+        height: 128px;
+    }
+    
+    .list-el-left {
+        padding-left: 48px;
+    }
+    
+    .list-right {
+        padding-right: 48px;
+    }
+   
+}
+
+@media (max-width:612px) {
+    .jobs-list {
+        align-items: center;
+        padding: 145px 32px 120px 32px;
+        gap: 16px;
+    }
+    
+    .list-el {
+        flex-direction: column;
+        justify-content: center;
+        max-width: 311px;
+        height: 190px;
+    }
+    
+    .list-el-left {
+        align-items: center;
+        gap: 4px;
+        padding-left: 0;
+        padding-top: 32px;
+    }
+    .list-el-title {
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.804px;
+    }
+    
+    .list-right {
+        padding: 16px 32px 32px 32px;
+    }
+    
+    .list-right-text {
+        width: 247px;
+        height: 53px;
+    }
+    
+}
