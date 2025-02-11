@@ -128,7 +128,6 @@ line-height: 25px;
     height: 15px;
     position: absolute;
     bottom: 44.30769230769231%;
-    background-image: url(./SVGs/p1b1-\ yellow\ line\ left.svg);
 }
 
 .p1b1-img2{
@@ -137,8 +136,6 @@ line-height: 25px;
     left: 705px;
     width: 452px;
     height: 153px;
-    background-image: url(./SVGs/twisted\ yellow\ arrow.svg);
-    background-repeat: no-repeat;
 }
 .p1b1-img3{
     position: absolute;
@@ -146,8 +143,6 @@ line-height: 25px;
     right: 0;
     width: 186px;
     height: 63px;
-    background-image: url(./SVGs/3\ ovals.svg);
-    background-repeat: no-repeat;
 }
 
 .p1b2 {
@@ -511,6 +506,20 @@ overflow: hidden;
 
 @media only screen and (max-width: 1400px) {
 
+    .p1b1-txts{
+        padding-left: 100px;
+    }
+    .p1b1-img1{
+        width: 150px;
+    }
+    .p1b1-img2{
+        bottom: 25.5%;
+        left: 640px;
+        width: 352px;
+    }
+    .p1b1-img3 {
+        width: 150px;
+    }
     .footer-ovals{
         left: 100px;
     }
@@ -523,6 +532,22 @@ overflow: hidden;
         padding-right: 65px;
         padding-left: 65px;
     }
+
+    .p1b1-txts{
+        padding-left: 40px;
+    }
+    .p1b1-img1{
+        width: 90px;
+    }
+    .p1b1-img2{
+        bottom: 26%;
+        left: 580px;
+        width: 292px;
+    }
+    .p1b1-img3 {
+        width: 120px;
+    }
+
     .p1b2-box-container{
         gap: 50px;
     }
