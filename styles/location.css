@@ -70,6 +70,7 @@
     font-size: 15px;
     font-weight: 700;
     line-height: 25px; 
+    transition: all 0.3s ease-in-out;
 }
 .btn:hover{
     cursor: pointer;
