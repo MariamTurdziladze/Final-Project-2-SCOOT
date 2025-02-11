@@ -518,6 +518,7 @@ overflow: hidden;
         width: 352px;
     }
     .p1b1-img3 {
+        bottom: 28%;
         width: 150px;
     }
     .footer-ovals{
@@ -540,11 +541,12 @@ overflow: hidden;
         width: 90px;
     }
     .p1b1-img2{
-        bottom: 26%;
+        bottom: 26.5%;
         left: 580px;
         width: 292px;
     }
     .p1b1-img3 {
+        bottom: 30%;
         width: 120px;
     }
 
