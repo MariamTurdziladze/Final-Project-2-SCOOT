@@ -250,6 +250,9 @@ line-height: 25px;
     width: 186px;
     height: 63px;
 }
+.img4mobile{
+    display: none;
+}
 
 .p1b2 {
     padding-top: 160px;
@@ -632,7 +635,6 @@ overflow: hidden;
     }
 }
 
-
 @media only screen and (max-width: 1200px) {
 
     .header{
@@ -668,46 +670,6 @@ overflow: hidden;
         padding-left: 65px;
     }
 
-}
-@media only screen and (max-width: 768px) {
-    .p1b1{
-      background-size: cover;
-      background-position: -490px;
-  }
-}
-
-@media only screen and (max-width: 700px) {
-    .header{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    .header{
-        display: none;
-    }
-    .header-hidden{
-        display: flex !important;
-    }
-    .p1b1{
-        background-size: cover;
-        background-position: -800px;
-    }
-
-    .p1b1-txt1{
-font-size: 40px;
-line-height: 40px;
-letter-spacing: -1.786px;
-    }
-    
-    .p1b1-img2 {
-        width: 314px;
-        bottom: 29.5px;
-    }
-    .p1b1-img3{
-        width: 134px;
-    }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -773,6 +735,49 @@ letter-spacing: -1.786px;
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .p1b1{
+      background-size: cover;
+      background-position: -490px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+    .header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header-left{
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .header{
+        display: none;
+    }
+    .header-hidden{
+        display: flex !important;
+    }
+    .p1b1{
+        background-size: cover;
+        background-position: -800px;
+    }
+
+    .p1b1-txt1{
+font-size: 40px;
+line-height: 40px;
+letter-spacing: -1.786px;
+    }
+    
+    .p1b1-img2 {
+        width: 314px;
+        bottom: 29.5px;
+    }
+    .p1b1-img3{
+        width: 134px;
+    }
+}
 
 @media only screen and (max-width: 480px) {
 
