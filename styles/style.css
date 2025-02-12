@@ -132,12 +132,13 @@
     flex-direction: column;
     gap: 24px;
   }
+  
 #bg{
     top: 64px;
     left: 0;
     height: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 101;
     opacity: 0.7473;
 background: #000;
 }
@@ -427,7 +428,7 @@ line-height: 25px;
 }
 
 .appstore{
-    z-index: 1000;
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -469,7 +470,7 @@ letter-spacing: -0.893px;
 
 .playstore{
     user-select: none;
-    z-index: 1000;
+    z-index: 100;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -49,3 +49,16 @@ function toggleNav(x) {
     }
     x.classList.toggle("change");
   }
+
+  document.getElementById('bg').addEventListener('click', function() {
+    var sidenav = document.getElementById("mySidenav");
+    var bg = document.getElementById("bg");
+    var toggleBtn = document.getElementById("toggleBtn");
+    
+    sidenav.style.width = "0";
+    bg.style.width = "0";
+    
+    toggleBtn.classList.remove("change");
+    document.body.style.overflow = "auto";
+
+});
