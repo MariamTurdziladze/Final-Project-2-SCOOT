@@ -32,3 +32,19 @@ document.body.addEventListener(`click`, (ev) => {
     expandable.classList.toggle("accordion-open")
 })
 
+// burger menu
+  function toggleNav(x) {
+    var sidenav = document.getElementById("mySidenav");
+    var bg = document.getElementById("bg");
+    if (sidenav.style.width === "68%") {
+      sidenav.style.width = "0";
+      bg.style.width = "0";
+        
+    } else {
+      sidenav.style.width = "68%";
+        bg.style.width= "100%";
+
+
+    }
+    x.classList.toggle("change");
+  }
