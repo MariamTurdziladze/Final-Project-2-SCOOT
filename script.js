@@ -59,6 +59,4 @@ function toggleNav(x) {
     bg.style.width = "0";
     
     toggleBtn.classList.remove("change");
-    document.body.style.overflow = "auto";
-
 });
