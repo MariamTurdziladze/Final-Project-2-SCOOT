@@ -348,9 +348,33 @@ line-height: 25px;
     gap: 24px;
 }
 
+.jobslist-btn {
+    width: 180px;
+    height: 53px;
+    background: #FCB72B;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: "Space Mono";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px; 
+    transition: all 0.3s ease-in-out;
+}
+.jobslist-btn:hover{
+    cursor: pointer;
+    background: transparent;
+    color: #FCB72B;
+    border: 3px solid #FCB72B;
+}
+
 .list-el {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
     align-items: center;
     max-width: 1110px;
     height: 128px;
@@ -469,7 +493,7 @@ letter-spacing: -0.446px;
 font-family: "Space Mono";
 font-size: 20px;
 font-weight: 700;
-line-height: 24px; /* 120% */
+line-height: 24px;
 letter-spacing: -0.893px;
 }
 
@@ -699,7 +723,8 @@ overflow: hidden;
 
 
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
+
     .jobs-list {
         padding: 120px 40px 120px 39px; 
         gap: 16px;
@@ -739,6 +764,7 @@ overflow: hidden;
 }
 
 @media (max-width:612px) {
+
     .jobs-list {
         align-items: center;
         padding: 145px 32px 120px 32px;
@@ -746,17 +772,23 @@ overflow: hidden;
     }
     
     .list-el {
+        gap: 0;
         flex-direction: column;
-        justify-content: center;
-        max-width: 311px;
+        align-items: center;
+        width: 311px;
         height: 190px;
+        padding-top: 36px;
+        padding-bottom: 32px;
+    }
+    .jobslist-btn{
+        width: 247px;
     }
     
     .list-el-left {
         align-items: center;
         gap: 4px;
         padding-left: 0;
-        padding-top: 32px;
+        padding-top: 0;
     }
     .list-el-title {
         font-size: 18px;
@@ -765,7 +797,7 @@ overflow: hidden;
     }
     
     .list-right {
-        padding: 16px 32px 32px 32px;
+        padding-right: 0;
     }
     
     .list-right-text {
