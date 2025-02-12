@@ -79,6 +79,112 @@
     border: 3px solid #FCB72B;
 }
 
+.header-hidden{
+    position: relative;
+    display: none !important;
+    width: 100%;
+    height: 64px;
+    display: flex;
+    align-items: center;
+}
+.header-hidden-left{
+    position: absolute;
+    top: 24px;
+    left: 32px;
+}
+.toggle-btn{
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 19px;
+    height: 3.69px;
+    background-color: #FCB72B;
+    margin: 2.64102333333px 0;
+    transition: 0.4s;
+}
+.toggle-btn.change .bar1 {
+    transform: translate(0, 6.5px) rotate(-45deg);
+  }
+  
+.toggle-btn.change .bar2 {opacity: 0;}
+  
+.toggle-btn.change .bar3 {
+    transform: translate(0, -6.5px) rotate(45deg);
+  }
+.header-hidden-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 200;
+    top: 64px;
+    left: 0;
+    background: #333A44;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+#bg{
+    top: 64px;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    opacity: 0.7473;
+background: #000;
+}
+  .sidepanel-btn{
+    position: absolute;
+    left: 32px;
+    bottom: 12.9801%;
+        width: 180px;
+        height: 53px;
+        background: #FCB72B;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFF;
+        text-align: center;
+        font-family: "Space Mono";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px; 
+        transition: all 0.3s ease-in-out;
+    }
+.sidepanel-btn:hover{
+        cursor: pointer;
+        background: transparent;
+        color: #FCB72B;
+        border: 3px solid #FCB72B;
+}
+
+  
+  .sidenav a {
+    padding-left: 32px;
+    text-decoration: none;
+    color: #E5ECF4;
+font-family: "Space Mono";
+font-size: 18px;
+font-weight: 700;
+line-height: 25px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+
 .p1b1 {
     display: flex;
     width: 100%;
@@ -563,12 +669,95 @@ overflow: hidden;
     }
 
 }
+@media only screen and (max-width: 768px) {
+    .p1b1{
+      background-size: cover;
+      background-position: -490px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+    .header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .header{
+        display: none;
+    }
+    .header-hidden{
+        display: flex !important;
+    }
+    .p1b1{
+        background-size: cover;
+        background-position: -800px;
+    }
+
+    .p1b1-txt1{
+font-size: 40px;
+line-height: 40px;
+letter-spacing: -1.786px;
+    }
+    
+    .p1b1-img2 {
+        width: 314px;
+        bottom: 29.5px;
+    }
+    .p1b1-img3{
+        width: 134px;
+    }
+}
 
 @media only screen and (max-width: 1024px) {
 
     .header{
         padding-right: 40px;
         padding-left: 40px;
+    }
+    .p1b1{
+        background-size: cover;
+        background-position: -368px;
+    }
+    .p1b1-content{
+        padding-top: 137px;
+        padding-left: 32px;
+        padding-right: 32px;
+        display: flex;
+        justify-content: center;
+    }
+    .p1b1-txts{
+        width: 573px;
+        align-items: center;
+        text-align: center;
+        gap: 24px;
+        padding-left: 0;
+    }
+    .p1b1-txt1{
+        width: auto;
+    }
+    .p1b1-txt2{
+        width: auto;
+    }
+    .p1b1-txt-btn{
+        align-items: center;
+        gap: 32px;
+        padding-left: 0;
+    }
+    .p1b1-img1{
+    display: none;
+    }
+    .p1b1-img2{
+        width: 414px;
+        height: 138px;
+        left: 0;
+        bottom: 37.5px;
+    }
+    .p1b1-img3{
+        width: 234px;
+        height: 63px;
+        bottom: 45px;
     }
 
     .footer-ovals{
@@ -584,5 +773,32 @@ overflow: hidden;
     }
 }
 
-@media only screen and (max-width: 768px) {
+
+@media only screen and (max-width: 480px) {
+
+    .p1b1{
+        background-size: cover;
+        background-position: -900px;
+    }
+    .p1b1-content{
+        padding-top: 115px;
+    }
+    .p1b1-img2{
+        display: none;
+    }
+    .img4mobile{
+        display: flex;
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .p1b1{
+        background-position: -1050px;
+    }
+    .p1b1-img3{
+        display: none;
+    }
 }
