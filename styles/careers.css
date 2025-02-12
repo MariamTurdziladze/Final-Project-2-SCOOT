@@ -103,7 +103,6 @@ line-height: 56px;
 letter-spacing: -2.5px;
 }
 .section-1{
-    width: 100%;
     padding-left: 165px;
     padding-top: 120px;
     padding-bottom: 60px;
@@ -494,6 +493,9 @@ overflow: hidden;
     .page-title-content{
         width: 1800px;
         height: 200px;
+    }
+    .section-1{
+        width: 1800px;
     }
     .our3{
         width: 1800px;
