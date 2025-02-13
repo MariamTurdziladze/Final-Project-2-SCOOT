@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    select,
+    button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
 }
 
 .container {
@@ -92,6 +97,8 @@
     left: 22px;
 }
 .toggle-btn{
+    border: none;
+    background: transparent;
     padding: 10px;
     cursor: pointer;
 }
