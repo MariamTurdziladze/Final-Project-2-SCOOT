@@ -422,7 +422,7 @@ line-height: 25px;
 
 .footer-top-txt{
     position: relative;
-    width: 415px;
+    max-width: 415px;
     color: #FFF;
     font-family: "Space Mono";
     font-size: 48px;
@@ -458,7 +458,6 @@ line-height: 25px;
 font-family: "Space Mono";
 font-size: 10px;
 font-weight: 700;
-line-height: normal;
 letter-spacing: -0.446px;
 }
 
@@ -758,8 +757,8 @@ overflow: hidden;
         left: 0px;
     }
     .footer-top{
-        padding-right: 40px;
-        padding-left: 40px;
+        padding-right: 32px;
+        padding-left: 32px;
     }
     .footer-bottom{
         padding-right: 40px;
@@ -781,6 +780,19 @@ overflow: hidden;
     position: absolute;
     bottom: 37.5px;
     left: 0;
+  }
+
+  .footer-ovals{
+    left: -200px;
+  }
+  .footer-top{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-top-txt{
+    max-width: 457px;
+    text-align: center;
   }
 
 }
@@ -827,6 +839,63 @@ letter-spacing: -1.786px;
     .p1b2-line{
         height: 609px;
     }
+
+    .footer-top{
+        height: 320px;
+    }
+    .footer-ovals{
+        left: -600px;
+    }
+    .footer-top-txt{
+font-size: 32px;
+line-height: 32px;
+letter-spacing: -1.429px;
+    }
+    .footer-top-links{
+        gap: 12.86px;
+    }
+    .appstore{
+        width: 113.571px;
+        height: 40px;
+    }
+    .appstore-txt1{
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: -0.446px;
+    }
+    
+    .appstore-txt2{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: -0.893px;
+    }
+    .apple-logo{
+        width: 17px;
+    }
+    .playstore{
+        width: 130px;
+        height: 40px;
+    }
+    .playstore-logo{
+        width: 17px;
+    }
+    .footer-bottom{
+        height: 438px;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 0 88px 0;
+
+    }
+    .footer-left{
+        flex-direction: column;
+        gap: 41px;
+    }
+    .footer-navigation{
+        flex-direction: column;
+        gap: 16px;
+    }
+    
 }
 @media only screen and (max-width: 514px) {
     .p1b2-line{
