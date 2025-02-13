@@ -89,10 +89,11 @@
 }
 .header-hidden-left{
     position: absolute;
-    top: 24px;
-    left: 32px;
+    top: 14px;
+    left: 22px;
 }
 .toggle-btn{
+    padding: 10px;
     cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
@@ -115,6 +116,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.header-hidden-title a{
+    padding: 10px;
 }
 
 .sidenav {
