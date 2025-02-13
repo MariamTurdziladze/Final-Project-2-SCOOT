@@ -729,7 +729,9 @@ overflow: hidden;
     .page-title-content{
         padding-left: 40px;
     }
-
+    .our1-txts{
+        max-width: 457px;
+    }
     .our3-container{
         flex-direction: column;
         gap: 55px;
@@ -843,4 +845,16 @@ letter-spacing: -1.429px;
         gap: 16px;
     }
     
+}
+
+@media only screen and (max-width: 480px) {
+    .our3{
+        gap: 64px;
+    }
+    .our1{
+        gap: 16px;
+    }
+    .our1-txts{
+        width: 311px;
+    }
 }
