@@ -570,7 +570,13 @@ overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
-
+    
+    .page-title-box{
+      background-image: url(./images/inner-tablet.jpg);
+  }
+  .page-title-content{
+      background: none;
+  }
     .footer-ovals{
         left: -200px;
       }
@@ -583,7 +589,6 @@ overflow: hidden;
         max-width: 457px;
         text-align: center;
       }
-    
 }
 @media only screen and (max-width: 700px) {
     .header{
@@ -674,5 +679,11 @@ letter-spacing: -1.429px;
         line-height: 40px;
         letter-spacing: -1.786px;
     }
-
+    .page-title-box{
+        background-image: url(./images/inner-mobile.jpg);
+        background-position: -20px 0;
+    }
+    .page-title-content{
+        background: none;
+    }
 }
