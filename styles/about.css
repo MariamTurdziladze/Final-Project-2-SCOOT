@@ -276,7 +276,7 @@ background-size: cover;
 .p2b1-arrow1{
     position: absolute;
     right: 0;
-    bottom: 30px;
+    bottom: 31px;
     width: 741px;
     height: 151px;
     background-image: url(./SVGs/p2b1\ arrow1.svg);
@@ -351,7 +351,7 @@ letter-spacing: -2.143px;
 .our1-img {
     position: relative;
     width: 240px;
-    height: 295px;
+    height: 289px;
 }
 .our1-oval-img1{
     position: absolute;
@@ -387,7 +387,7 @@ letter-spacing: -2.143px;
     border-radius: 50%;
     background: #FCB72B;
     bottom: 0;
-    left: 72.5px;
+    left: 72px;
 }
 .our1-h1{
     color: #495567;
@@ -747,9 +747,6 @@ overflow: hidden;
         align-items: center;
         padding-left: 65px;
         padding-right: 65px;
-    }
-    .faq{
-        gap: 60px;
     }
 }
 

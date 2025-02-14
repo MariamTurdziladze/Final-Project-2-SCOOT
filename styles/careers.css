@@ -308,7 +308,7 @@ letter-spacing: -2.143px;
 .our1-img {
     position: relative;
     width: 240px;
-    height: 295px;
+    height: 289px;
 }
 .our1-oval-img1{
     position: absolute;
@@ -344,7 +344,7 @@ letter-spacing: -2.143px;
     border-radius: 50%;
     background: #FCB72B;
     bottom: 0;
-    left: 72.5px;
+    left: 72px;
 }
 .our1-h1{
     color: #495567;
@@ -814,7 +814,7 @@ overflow: hidden;
     }
 
     .jobs-list {
-        padding: 120px 40px 120px 39px; 
+        padding: 60px 40px 120px 39px; 
         gap: 16px;
     }
     
@@ -916,6 +916,9 @@ overflow: hidden;
 
     .section1{
         padding-top: 72px;
+    }
+    .section1-container{
+        gap: 56px;
     }
     .section1-h1{
         font-size: 32px;

@@ -612,6 +612,7 @@ overflow: hidden;
   }
   .contact-txt1{
     max-width: 457px;
+    text-transform: capitalize;
   }
   .contact-txt2{
     max-width: 573px;
