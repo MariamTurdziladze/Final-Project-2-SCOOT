@@ -529,7 +529,7 @@ overflow: hidden;
         padding-left: 40px;
     }
     .page-title-content{
-        padding-left: 40px;
+        padding-left: 97px;
     }
     .footer-ovals{
         left: 0px;
@@ -601,7 +601,14 @@ overflow: hidden;
     .header-hidden{
         display: flex !important;
     }
-
+    .page-title-content{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-title-img{
+        display: none;
+    }
     .footer-top{
         height: 320px;
     }
@@ -658,4 +665,14 @@ letter-spacing: -1.429px;
         gap: 16px;
     }
     
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .page-title{
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.786px;
+    }
+
 }
