@@ -406,7 +406,7 @@ letter-spacing: -1.786px;
 .accordion-open .accordion-content-wrapper{
     display: grid;
     grid-template-rows: 1fr;
-    padding-bottom: 25px;
+    padding-bottom: 24px;
 }
 
 .accordion-open .accordion-icon {
@@ -771,6 +771,9 @@ overflow: hidden;
         align-items: center;
         gap: 32px;
     }
+    .accordion{
+        padding: 32px 32px 8px 40px;
+    }
     .accordion-container{
         gap: 24px;
     }
@@ -933,8 +936,5 @@ letter-spacing: -1.429px;
     }
     .accordion-title-bar{
         gap: 14px;
-    }
-    .accordion-open .accordion-content-wrapper{
-        padding-bottom: 24px;
     }
 }
