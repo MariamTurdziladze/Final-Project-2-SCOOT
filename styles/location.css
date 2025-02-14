@@ -529,7 +529,7 @@ overflow: hidden;
         padding-left: 40px;
     }
     .page-title-content{
-        padding-left: 40px;
+        padding-left: 97px;
     }
     .footer-ovals{
         left: 0px;
@@ -570,7 +570,13 @@ overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
-
+    
+    .page-title-box{
+      background-image: url(./images/inner-tablet.jpg);
+  }
+  .page-title-content{
+      background: none;
+  }
     .footer-ovals{
         left: -200px;
       }
@@ -583,7 +589,6 @@ overflow: hidden;
         max-width: 457px;
         text-align: center;
       }
-    
 }
 @media only screen and (max-width: 700px) {
     .header{
@@ -601,7 +606,14 @@ overflow: hidden;
     .header-hidden{
         display: flex !important;
     }
-
+    .page-title-content{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-title-img{
+        display: none;
+    }
     .footer-top{
         height: 320px;
     }
@@ -658,4 +670,20 @@ letter-spacing: -1.429px;
         gap: 16px;
     }
     
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .page-title{
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.786px;
+    }
+    .page-title-box{
+        background-image: url(./images/inner-mobile.jpg);
+        background-position: -20px 0;
+    }
+    .page-title-content{
+        background: none;
+    }
 }

@@ -727,7 +727,7 @@ overflow: hidden;
         padding-left: 40px;
     }
     .page-title-content{
-        padding-left: 40px;
+        padding-left: 97px;
     }
     .our1-txts{
         max-width: 457px;
@@ -755,6 +755,13 @@ overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
+
+    .page-title-box{
+        background-image: url(./images/about-tablet.jpg);
+    }
+    .page-title-content{
+        background: none;
+    }
 
     .faqs{
         padding-bottom: 120px;
@@ -794,11 +801,21 @@ overflow: hidden;
 }
 
 @media only screen and (max-width: 640px) {
+
     .header{
         display: none;
     }
     .header-hidden{
         display: flex !important;
+    }
+
+    .page-title-content{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-title-img{
+        display: none;
     }
 
     .footer-top{
@@ -860,6 +877,21 @@ letter-spacing: -1.429px;
 }
 
 @media only screen and (max-width: 480px) {
+
+    .page-title{
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.786px;
+    }
+
+    .page-title-box{
+        background-image: url(./images/about-mobile.jpg);
+        background-position: -50px 0;
+    }
+    .page-title-content{
+        background: none;
+    }
+
     .our3{
         gap: 64px;
         padding-bottom: 72.5px;
