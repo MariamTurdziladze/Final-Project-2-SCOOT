@@ -599,7 +599,6 @@ overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
-    
     .page-title-box{
       background-image: url(./images/inner-tablet.jpg);
     }
@@ -617,14 +616,39 @@ overflow: hidden;
   .contact-txt2{
     max-width: 573px;
   }
-    .footer-ovals{
-        left: -200px;
-      }
-      .footer-top{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
+  .footer-top-links{
+    gap: 12.86px;
+}
+.playstore{
+    width: 130px;
+    height: 40px;
+    background-image: url(./SVGs/playstore.svg);
+    background-size: cover;
+}
+.playstore-logo{
+    display: none;
+}
+.appstore{
+    width: 113.571px;
+    height: 40px;
+    background-image: url(./SVGs/appstore.svg);
+    background-size: cover;
+}
+.appstore-txts{
+    display: none;
+}
+.apple-logo{
+    display: none;
+}
+  .footer-ovals{
+    left: -220px;
+  }
+  .footer-top{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
       .footer-top-txt{
         max-width: 457px;
         text-align: center;
@@ -656,6 +680,7 @@ overflow: hidden;
     }
     .footer-top{
         height: 320px;
+        gap: 40px;
     }
     .footer-ovals{
         left: -600px;
@@ -698,7 +723,7 @@ letter-spacing: -1.429px;
         height: 438px;
         flex-direction: column;
         align-items: center;
-        padding: 64px 0 88px 0;
+        padding: 64px 0 85px 0;
 
     }
     .footer-left{

@@ -217,23 +217,22 @@ font-weight: 700;
 line-height: 56px;
 letter-spacing: -2.5px;
 }
-.section-1{
+
+.section1{
     padding-left: 165px;
     padding-top: 120px;
     padding-bottom: 60px;
 }
-.section1-box{
-    width: 100%;
-    height: 445px;
+.section1-container{
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
-.section1-texts{
-    width: 50%;
+.section1-txts{
     display: flex;
     flex-direction: column;
 }
-.section1-text1{
+.section1-h1{
     width: 445px;
     color: #495567;
     font-family: "Space Mono";
@@ -242,15 +241,40 @@ letter-spacing: -2.5px;
     line-height: 48px;
     letter-spacing: -2.143px;
 }
-.section1-text2{
+.section1-h2{
     width: 445px;
     color: #939CAA;
     font-family: "Lexend Deca";
     font-size: 15px;
-    font-weight: 400;
     line-height: 25px;
     padding-top: 24px;
     padding-bottom: 40px;
+}
+.section1-design{
+    position: relative;
+    display: flex;
+    justify-content: end;
+    gap: 64px;
+}
+.section1-pic{
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    background: #D8D8D8;
+    background-image: url(./images/career\ page\ img1.png);
+    background-size: cover;
+}
+.section1-half-oval{
+    width: 101px;
+    height: 445px;
+}
+.section1-arrow{
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    width: 741px;
+    height: 151px;
+    background-image: url(./SVGs/career\ arrow.svg);
 }
 
 .our3 {
@@ -664,6 +688,10 @@ overflow: hidden;
 
 @media only screen and (max-width: 1400px) {
 
+    .section1{
+        padding-left: 32px;
+    }
+
     .our3{
         padding-right: 40px;
         padding-left: 40px;
@@ -688,6 +716,21 @@ overflow: hidden;
     .page-title-content{
         padding-left: 65px;
     }
+
+    .section1-design{
+        gap: 30px;
+    }
+    .section1-pic{
+        width: 345px;
+        height: 345px;
+    }
+    .section1-half-oval{
+        height: 345px;
+    }
+    .section1-arrow{
+        width: 541px;
+    }
+
     .footer-top{
         padding-right: 65px;
         padding-left: 65px;
@@ -706,6 +749,36 @@ overflow: hidden;
     }
     .page-title-content{
         padding-left: 97px;
+    }
+    .section1{
+        padding-top: 144px;
+        padding-left: 0;
+    }
+    .section1-container{
+        flex-direction: column-reverse;
+        gap: 64px;
+    }
+    .section1-txts{
+        text-align: center;
+        align-items: center;
+    }
+    .section1-h2{
+        padding-top: 40px;
+        width: 573px;
+    }
+    .section1-design{
+        width: 100%;
+        gap: 64px;
+    }
+    .section1-pic{
+        width: 445px;
+        height: 445px;
+    }
+    .section1-half-oval{
+        height: 445px;
+    }
+    .section1-arrow{
+        width: 741px;
     }
     .our1-txts{
         max-width: 457px;
@@ -740,25 +813,6 @@ overflow: hidden;
         background: none;
     }
 
-    .footer-ovals{
-        left: -200px;
-      }
-      .footer-top{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-      .footer-top-txt{
-        max-width: 457px;
-        text-align: center;
-      }
-    
-}
-
-
-
-@media (max-width: 768px) {
-
     .jobs-list {
         padding: 120px 40px 120px 39px; 
         gap: 16px;
@@ -775,6 +829,61 @@ overflow: hidden;
     
     .list-right {
         padding-right: 48px;
+    }
+
+    .footer-top-links{
+        gap: 12.86px;
+    }
+    .playstore{
+        width: 130px;
+        height: 40px;
+        background-image: url(./SVGs/playstore.svg);
+        background-size: cover;
+    }
+    .playstore-logo{
+        display: none;
+    }
+    .appstore{
+        width: 113.571px;
+        height: 40px;
+        background-image: url(./SVGs/appstore.svg);
+        background-size: cover;
+    }
+    .appstore-txts{
+        display: none;
+    }
+    .apple-logo{
+        display: none;
+    }
+      .footer-ovals{
+        left: -220px;
+      }
+      .footer-top{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+      }
+      .footer-top-txt{
+        max-width: 457px;
+        text-align: center;
+      }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .section1-design{
+        gap: 30px;
+    }
+    .section1-pic{
+        width: 345px;
+        height: 345px;
+    }
+    .section1-half-oval{
+        height: 345px;
+    }
+    .section1-arrow{
+        width: 541px;
     }
 }
 
@@ -805,8 +914,37 @@ overflow: hidden;
         display: none;
     }
 
+    .section1{
+        padding-top: 72px;
+    }
+    .section1-h1{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.429px;
+    }
+    .section1-h2{
+        width: 311px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+    .section1-design{
+        justify-content: center;
+    }
+    .section1-half-oval{
+        display: none;
+    }
+
+    .section1-pic{
+        width: 311px;
+        height: 311px;
+    }
+    .section1-arrow{
+        width: 349px;
+    }
+
     .footer-top{
         height: 320px;
+        gap: 40px;
     }
     .footer-ovals{
         left: -600px;
@@ -849,8 +987,7 @@ letter-spacing: -1.429px;
         height: 438px;
         flex-direction: column;
         align-items: center;
-        padding: 64px 0 88px 0;
-
+        padding: 64px 0 85px 0;
     }
     .footer-left{
         flex-direction: column;
@@ -867,7 +1004,7 @@ letter-spacing: -1.429px;
 
     .jobs-list {
         align-items: center;
-        padding: 145px 32px 120px 32px;
+        padding: 85px 32px 120px 32px;
         gap: 16px;
     }
     
@@ -923,6 +1060,11 @@ letter-spacing: -1.429px;
 
     .our3{
         gap: 64px;
+    }
+    .our3-title{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.429px;
     }
     .our1{
         gap: 16px;
