@@ -762,6 +762,7 @@ overflow: hidden;
     .faq{
         flex-direction: column;
         align-items: center;
+        gap: 32px;
     }
     .accordion-container{
         gap: 24px;
@@ -899,7 +900,7 @@ letter-spacing: -1.429px;
         letter-spacing: -0.804px;
     }
     .accordion-title-bar{
-        gap: 16px;
+        gap: 14px;
     }
     .accordion-open .accordion-content-wrapper{
         padding-bottom: 24px;
