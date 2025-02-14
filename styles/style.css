@@ -829,7 +829,9 @@ overflow: hidden;
         flex-direction: row;
         gap: 79px;
     }
-
+    .p1b3{
+        padding-top: 72.5px;
+    }
     .p1b3c1{
         flex-direction: column-reverse;
         gap: 56px;

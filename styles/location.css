@@ -226,6 +226,35 @@ letter-spacing: -2.5px;
     justify-content: center;
     align-items: center;
 }
+.map-section-mobile{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 73px;
+    padding-bottom: 72px;
+}
+.cities-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(252, 183, 43, 0.15);
+    width: 311px;
+    height: 72px;
+    color: #495567;
+text-align: center;
+font-family: "Space Mono";
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: -1.071px;
+}
 .map {
     width: 77.08333333333334%;
     height: 69.17197452229298%;
@@ -573,9 +602,20 @@ overflow: hidden;
     
     .page-title-box{
       background-image: url(./images/inner-tablet.jpg);
-  }
+    }
+
   .page-title-content{
       background: none;
+  }
+  .map-section{
+    padding-top: 144px;
+    padding-bottom: 64px;
+  }
+  .contact-txt1{
+    max-width: 457px;
+  }
+  .contact-txt2{
+    max-width: 573px;
   }
     .footer-ovals{
         left: -200px;
@@ -679,11 +719,33 @@ letter-spacing: -1.429px;
         line-height: 40px;
         letter-spacing: -1.786px;
     }
+
     .page-title-box{
+        height: 160px;
         background-image: url(./images/inner-mobile.jpg);
-        background-position: -20px 0;
     }
     .page-title-content{
         background: none;
+    }
+    .map-section{
+        display: none;
+    }
+    .map-section-mobile{
+        display: flex;
+    }
+    .contact-container{
+        padding-bottom: 72px;
+    }
+    .contact{
+        gap: 32px;
+    }
+    .contact-txts{
+        width: 311px;
+        gap: 32px;
+    }
+    .contact-txt1{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.429px;
     }
 }
