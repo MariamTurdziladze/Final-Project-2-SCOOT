@@ -914,8 +914,8 @@ letter-spacing: -1.429px;
         letter-spacing: -1.786px;
     }
     .page-title-box{
+        height: 160px;
         background-image: url(./images/inner-mobile.jpg);
-        background-position: -30px 0;
     }
     .page-title-content{
         background: none;
