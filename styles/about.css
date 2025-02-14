@@ -756,6 +756,17 @@ overflow: hidden;
 
 @media only screen and (max-width: 768px) {
 
+    .faqs{
+        padding-bottom: 120px;
+    }
+    .faq{
+        flex-direction: column;
+        align-items: center;
+    }
+    .accordion-container{
+        gap: 24px;
+    }
+
     .footer-ovals{
         left: -200px;
       }
@@ -850,11 +861,47 @@ letter-spacing: -1.429px;
 @media only screen and (max-width: 480px) {
     .our3{
         gap: 64px;
+        padding-bottom: 72.5px;
     }
     .our1{
         gap: 16px;
     }
     .our1-txts{
         width: 311px;
+    }
+    .faqs{
+        padding: 72.5px 32px 160px 32px;
+        gap: 48px;
+    }
+    .faqs-title{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.429px;
+    }
+    .faq-title{
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.071px;
+    }
+    .faq{
+        gap: 32px;
+    }
+    .accordion{
+        padding: 32px 32px 8px 32px;
+    }
+    .accordion-container{
+        gap: 16px;
+    }
+    .accordion-title{
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.804px;
+    }
+    .accordion-title-bar{
+        gap: 16px;
+    }
+    .accordion-open .accordion-content-wrapper{
+        padding-bottom: 24px;
     }
 }
