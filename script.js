@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let currentPage = window.location.pathname.split("/").pop(); 
+    let currentPage = window.location.pathname.split("/").pop();
 
     let pageMap = {
         "about.html": ["about-link", "footer-about-link"],
@@ -38,25 +38,25 @@ function toggleNav(x) {
     var sidenav = document.getElementById("mySidenav");
     var bg = document.getElementById("bg");
     if (sidenav.style.width === "68%") {
-      sidenav.style.width = "0";
-      bg.style.width = "0";
-        
+        sidenav.style.width = "0";
+        bg.style.width = "0";
+
     } else {
-      sidenav.style.width = "68%";
-        bg.style.width= "100%";
+        sidenav.style.width = "68%";
+        bg.style.width = "100%";
 
 
     }
     x.classList.toggle("change");
-  }
+}
 
-  document.getElementById('bg').addEventListener('click', function() {
+document.getElementById('bg').addEventListener('click', function () {
     var sidenav = document.getElementById("mySidenav");
     var bg = document.getElementById("bg");
     var toggleBtn = document.getElementById("toggleBtn");
-    
+
     sidenav.style.width = "0";
     bg.style.width = "0";
-    
+
     toggleBtn.classList.remove("change");
 });
