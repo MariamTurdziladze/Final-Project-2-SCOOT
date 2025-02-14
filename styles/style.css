@@ -328,7 +328,7 @@ line-height: 25px;
     display: flex;
     flex-direction: column;
     gap: 165px;
-    padding: 100px 0 100px 0;
+    padding: 100px 0 200px 0;
 }
 
 .p1b3c1 {
@@ -348,7 +348,6 @@ line-height: 25px;
 .p1b3c1-left {
     display: flex;
     flex-direction: column;
-    gap: 24px;
 }
 
 .p1b3-title {
@@ -367,6 +366,8 @@ line-height: 25px;
     font-size: 15px;
     line-height: 25px;
     max-width: 445px;
+    padding-top: 24px;
+    padding-bottom: 40px;
 }
 
 .p1b3c1-right {
@@ -870,6 +871,8 @@ overflow: hidden;
     }
     .p1b3-text {
         max-width: 573px;
+        padding-top: 0;
+        padding-bottom: 0;
     }
     .b3main-pic{
         width: 445px;
@@ -918,7 +921,6 @@ overflow: hidden;
     bottom: 34px;
     left: 0;
   }
-
   .b3main-pic{
     width: 100%;
     height: 100%;
