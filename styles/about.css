@@ -906,14 +906,38 @@ overflow: hidden;
     .accordion-container{
         gap: 24px;
     }
-
-    .footer-ovals{
-        left: -200px;
+    .footer-top-links{
+        gap: 12.86px;
+    }
+    .playstore{
+        width: 130px;
+        height: 40px;
+        background-image: url(./SVGs/playstore.svg);
+        background-size: cover;
+    }
+    .playstore-logo{
+        display: none;
+    }
+    .appstore{
+        width: 113.571px;
+        height: 40px;
+        background-image: url(./SVGs/appstore.svg);
+        background-size: cover;
+    }
+    .appstore-txts{
+        display: none;
+    }
+    .apple-logo{
+        display: none;
+    }
+      .footer-ovals{
+        left: -220px;
       }
       .footer-top{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 40px;
       }
       .footer-top-txt{
         max-width: 457px;
@@ -983,6 +1007,7 @@ overflow: hidden;
     }
     .p2b1-arrow1-mobile{
         display: flex;
+        bottom: 32px;
     }
     .p2b1-arrow2-mobile{
         display: flex;
@@ -1011,9 +1036,14 @@ overflow: hidden;
     .p2b1-txts{
         gap: 32px;
     }
+    .p2b1-arrow2{
+        left: -6px;
+        top: -8px;
+    }
 
     .footer-top{
         height: 320px;
+        gap: 40px;
     }
     .footer-ovals{
         left: -600px;
@@ -1056,8 +1086,7 @@ letter-spacing: -1.429px;
         height: 438px;
         flex-direction: column;
         align-items: center;
-        padding: 64px 0 88px 0;
-
+        padding: 64px 0 85px 0;
     }
     .footer-left{
         flex-direction: column;
@@ -1089,6 +1118,11 @@ letter-spacing: -1.429px;
     .our3{
         gap: 64px;
         padding-bottom: 72.5px;
+    }
+    .our3-title{
+        font-size: 32px;
+        line-height: 32px;
+        letter-spacing: -1.429px;
     }
     .our1{
         gap: 16px;

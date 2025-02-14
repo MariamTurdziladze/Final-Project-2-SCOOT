@@ -295,7 +295,12 @@ line-height: 25px;
 }
 .p1b2-icon{
     width: 96px;
-height: 96px;
+    height: 96px;
+}
+.p1b2-icon-mobile{
+    display: none;
+    width: 56px;
+    height: 56px;
 }
 .p1b2-txts{
     display: flex;
@@ -801,8 +806,8 @@ overflow: hidden;
         bottom: 37.5px;
     }
     .p1b1-img3{
-        width: 234px;
-        height: 63px;
+        width: 220px;
+        height: 64px;
         bottom: 45px;
     }
 
@@ -815,7 +820,7 @@ overflow: hidden;
     }
     .p1b2-line{
         top: 0;
-        left: 136.5px;
+        left: 137.5px;
     width: 15px;
     height: 513px;
     }
@@ -910,7 +915,7 @@ overflow: hidden;
   .img4tablet{
     display: flex;
     position: absolute;
-    bottom: 37.5px;
+    bottom: 34px;
     left: 0;
   }
 
@@ -922,14 +927,38 @@ overflow: hidden;
     width: 96%;
     bottom: 1%;
 }
-
+.footer-top-links{
+    gap: 12.86px;
+}
+.playstore{
+    width: 130px;
+    height: 40px;
+    background-image: url(./SVGs/playstore.svg);
+    background-size: cover;
+}
+.playstore-logo{
+    display: none;
+}
+.appstore{
+    width: 113.571px;
+    height: 40px;
+    background-image: url(./SVGs/appstore.svg);
+    background-size: cover;
+}
+.appstore-txts{
+    display: none;
+}
+.apple-logo{
+    display: none;
+}
   .footer-ovals{
-    left: -200px;
+    left: -220px;
   }
   .footer-top{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 40px;
   }
   .footer-top-txt{
     max-width: 457px;
@@ -1050,7 +1079,7 @@ letter-spacing: -1.429px;
         height: 438px;
         flex-direction: column;
         align-items: center;
-        padding: 64px 0 88px 0;
+        padding: 64px 0 85px 0;
 
     }
     .footer-left{
@@ -1078,9 +1107,13 @@ letter-spacing: -1.429px;
     .p1b1-content{
         padding-top: 115px;
     }
+    .p1b1-txt-btn{
+        gap: 34px;
+    }
     .p1b1-img2{
         display: none;
     }
+
     .img4tablet{
         display: none;
     }
@@ -1093,6 +1126,12 @@ letter-spacing: -1.429px;
 
     .p1b2{
         padding: 120px 32px 60px 32px;
+    }
+    .p1b2-icon{
+        display: none;
+    }
+    .p1b2-icon-mobile{
+        display: flex;
     }
     .p1b2-line{display: none;}
     .p1b2-box-container{
