@@ -198,6 +198,23 @@
   color: #f1f1f1;
 }
 
+.currency {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #939caa
+}
+
+.currency-date {
+  padding-right: 10px;
+}
+
+.currency-text {
+  white-space: nowrap;
+}
+
 .page-title-box {
   height: 200px;
   background-image: url(./images/other\ page\ title\ backgrounds.png);
@@ -873,6 +890,11 @@
     padding-right: 40px;
     padding-left: 40px;
   }
+
+  .currency {
+    flex-direction: column;
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -937,6 +959,10 @@
   .footer-top-txt {
     max-width: 457px;
     text-align: center;
+  }
+
+  .currency {
+    display: none;
   }
 }
 
