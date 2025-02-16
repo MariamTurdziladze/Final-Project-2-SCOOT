@@ -168,13 +168,20 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isValid) {
             alert("You've applied successfully!");
 
-            localStorage.setItem('firstName', document.getElementById('firstName').value);
-            localStorage.setItem('lastName', document.getElementById('lastName').value);
-            localStorage.setItem('email', document.getElementById('email').value);
-            localStorage.setItem('tel', document.getElementById('tel').value);
+            let applications = JSON.parse(localStorage.getItem('applications')) || [];
 
+            let newApplication = {
+                firstName: firstNameInput.value,
+                lastName: lastNameInput.value,
+                email: emailInput.value,
+                tel: telInput.value,
+                resume: resumeInput.files[0]?.name || ""
+            };
+
+            applications.push(newApplication);
+            localStorage.setItem('applications', JSON.stringify(applications));
+            
             form.reset();
-
             modal.style.display = "none";
         }
     });
