@@ -186,3 +186,29 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+// currency
+
+fetch("https://nbg.gov.ge/gw/api/ct/monetarypolicy/currencies/ka/json")
+  .then(response => response.json())
+  .then(data => {
+    const currencyContainer = document.querySelector(".currency");
+    currencyContainer.innerHTML = "";
+
+    data.forEach(info => {
+        const dateElement = document.createElement("div");
+        dateElement.classList.add("currency-date");
+        dateElement.innerText = info.date.slice(0, 10);
+
+        const currencies = info.currencies.filter(currency => currency.code === 'USD' || currency.code === 'EUR');
+        
+        const currencyText = document.createElement("div");
+        currencyText.classList.add("currency-text");
+        currencyText.innerHTML = currencies.map(currency => `${currency.code} - ${currency.rateFormated}`).join(" | ");
+
+        currencyContainer.appendChild(dateElement);
+        currencyContainer.appendChild(currencyText);
+    });
+  }) 
+  .catch(error => console.log(error));
