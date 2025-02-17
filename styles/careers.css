@@ -427,6 +427,14 @@
   border: 3px solid #fcb72b;
 }
 
+.box{
+  font-family: "Lexend Deca";
+  color: #495567;
+}
+.form-top h1{
+  color: #fcb72b;
+  font-family: "Space Mono";
+}
 .form-top {
   display: flex;
   flex-direction: column;
@@ -478,7 +486,8 @@
 }
 
 .errors {
-  color: #fcb72b;
+  text-align: end;
+  color: red;
   font-size: 12px;
   padding-bottom: 10px;
 }
@@ -558,9 +567,6 @@
   background: transparent;
   color: #fcb72b;
   border: 3px solid #fcb72b;
-}
-
-.footer {
 }
 
 .footer-top {
