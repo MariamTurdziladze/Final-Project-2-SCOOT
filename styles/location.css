@@ -593,6 +593,21 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .fb:hover svg path {
+    fill: #FCB72B;
+  }
+  .twt:hover svg path {
+    fill: #FCB72B;
+  }
+  
+  .ig:hover svg path {
+    fill: #FCB72B;
+  }
+  .btn:hover{
+    background: #fcb72b;
+    border: none;
+    color: #fff;
+  }
   .page-title-box {
     background-image: url(./images/inner-tablet.jpg);
   }
