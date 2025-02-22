@@ -36,28 +36,41 @@ document.body.addEventListener(`click`, (ev) => {
 // burger menu
 function toggleNav(x) {
     var sidenav = document.getElementById("mySidenav");
+    var bgTop = document.getElementById('bg-top');
     var bg = document.getElementById("bg");
+
     if (sidenav.style.width === "68%") {
         sidenav.style.width = "0";
         bg.style.width = "0";
-
+        bgTop.style.width = "0";
     } else {
         sidenav.style.width = "68%";
         bg.style.width = "100%";
-
-
+        bgTop.style.width = "100%";
     }
     x.classList.toggle("change");
 }
+document.getElementById('bg-top').addEventListener('click', function () {
+  var sidenav = document.getElementById("mySidenav");
+  var bg = document.getElementById("bg");
+  var bgTop = document.getElementById('bg-top');
+  var toggleBtn = document.getElementById("toggleBtn");
+
+  sidenav.style.width = "0";
+  bg.style.width = "0";
+  bgTop.style.width = "0";
+  toggleBtn.classList.remove("change");
+});
 
 document.getElementById('bg').addEventListener('click', function () {
     var sidenav = document.getElementById("mySidenav");
     var bg = document.getElementById("bg");
+    var bgTop = document.getElementById('bg-top');
     var toggleBtn = document.getElementById("toggleBtn");
 
     sidenav.style.width = "0";
     bg.style.width = "0";
-
+    bgTop.style.width = "0";
     toggleBtn.classList.remove("change");
 });
 

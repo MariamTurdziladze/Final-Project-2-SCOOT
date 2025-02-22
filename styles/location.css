@@ -147,6 +147,13 @@
   flex-direction: column;
   gap: 24px;
 }
+#bg-top{
+  top: 0px;
+  left: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 101;
+}
 #bg {
   top: 64px;
   left: 0;
@@ -604,6 +611,11 @@
     fill: #FCB72B;
   }
   .btn:hover{
+    background: #fcb72b;
+    border: none;
+    color: #fff;
+  }
+  .sidepanel-btn:hover {
     background: #fcb72b;
     border: none;
     color: #fff;
