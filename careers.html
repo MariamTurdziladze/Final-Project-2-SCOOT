@@ -5,8 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Careers</title>
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="./styles/careers.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <script
+        src="./converter.js"
+      defer
+    ></script>
 </head>
 
 <body>
@@ -22,7 +29,7 @@
             </div>
             
             <div class="header-right">
-                <button class="btn">Get Scootin</button>
+                <button id="converter-open-btn" class="btn">Get Scootin</button>
             </div>
         </div>
         <div class="header-hidden">
@@ -47,6 +54,41 @@
                 </a>
             </div>
         </div>
+        <!-- Currency Converter Modal -->
+<div id="converter-modal" class="currency-converter-modal">
+      <main>
+        <h1>Currency Converter</h1>
+        <div class="controls" id="controls">
+          <div class="control">
+            <button id="base" data-drawer>USD</button>
+            <input type="number" id="base-input" value="0" min="0" step="any" inputmode="decimal" />
+          </div>
+          <div class="control">
+            <button id="target" data-drawer>EUR</button>
+            <input type="number" id="target-input" value="0" readonly />
+          </div>
+          <button class="swap-btn" id="swap-btn">
+            <span class="material-symbols-outlined"> sync_alt </span>
+          </button>
+        </div>
+        <div class="exchange-rate">
+          <h5>Exchange Rate</h5>
+          <span id="exchange-rate"></span>
+        </div>
+        <div class="drawer" id="drawer">
+          <div class="title">
+            <button id="dismiss-btn">
+              <span class="material-symbols-outlined"> west </span>
+            </button>
+            <h3>Select Currency</h3>
+          </div>
+          <div class="search">
+            <input type="search" id="search" placeholder="Search" />
+          </div>
+          <ul class="currency-list" id="currency-list"></ul>
+        </div>
+      </main>
+  </div>
         <div class="page-title-box">
             <div class="page-title-content">
                 <div class="page-title">Careers</div>
@@ -303,37 +345,6 @@
                 </div>
                 <div class="list-right">
                     <button id="apply-btn" class="apply-btn">Apply</button>
-                    <div id="modal" class="modal">
-                        <div class="modal-box">
-                            <span id="close-btn" class="close">&times;</span>
-
-                            <form id="signup-form" class="box" action="">
-                                <div class="form-top">
-                                    <h1>Job Application Form</h1>
-                                    <p>Please Fill Out the Form Below to Submit Your Job Application</p>
-                                    <hr>
-                                </div>
-
-                                <label for="firstName">First Name</label required>
-                                <input class="boxes" type="text" name="firstName" id="firstName">
-                                <div class="errors" id="firstName-error"></div>
-
-                                <label for="lastName">Last Name</label required>
-                                <input class="boxes" type="text" name="lastName" id="lastName">
-                                <div class="errors" id="lastName-error"></div>
-
-                                <label for="email">E-mail</label required>
-                                <input class="boxes" type="email" name="email" id="email"
-                                    placeholder="ex: myname@example.com">
-                                <div class="errors" id="email-error"></div>
-
-                                <label for="tel">Phone Number</label required>
-                                <input class="boxes" type="tel" name="tel" id="tel" placeholder="(+995 500 00 00 00)">
-                                <div class="errors" id="tel-error"></div>
-                                <button id="submit" class="bt-box" type="submit">SUBMIT</button>
-                            </form>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -344,37 +355,7 @@
                 </div>
                 <div class="list-right">
                     <button id="apply-btn" class="apply-btn">Apply</button>
-                    <div id="modal" class="modal">
-                        <div class="modal-box">
-                            <span id="close-btn" class="close">&times;</span>
-
-                            <form id="signup-form" class="box" action="">
-                                <div class="form-top">
-                                    <h1>Job Application Form</h1>
-                                    <p>Please Fill Out the Form Below to Submit Your Job Application</p>
-                                    <hr>
-                                </div>
-
-                                <label for="firstName">First Name</label required>
-                                <input class="boxes" type="text" name="firstName" id="firstName">
-                                <div class="errors" id="firstName-error"></div>
-
-                                <label for="lastName">Last Name</label required>
-                                <input class="boxes" type="text" name="lastName" id="lastName">
-                                <div class="errors" id="lastName-error"></div>
-
-                                <label for="email">E-mail</label required>
-                                <input class="boxes" type="email" name="email" id="email"
-                                    placeholder="ex: myname@example.com">
-                                <div class="errors" id="email-error"></div>
-
-                                <label for="tel">Phone Number</label required>
-                                <input class="boxes" type="tel" name="tel" id="tel" placeholder="(+995 500 00 00 00)">
-                                <div class="errors" id="tel-error"></div>
-                                <button id="submit" class="bt-box" type="submit">SUBMIT</button>
-                            </form>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
 
