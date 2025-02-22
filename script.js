@@ -355,7 +355,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const firstNamePattern = /^[A-Za-z]{2,30}(-[A-Za-z]{2,30})?$/;
         const firstNameError = document.getElementById('firstName-error');
 
-        if (!firstNamePattern.test(firstNameInput.value)) {
+        if (!firstNamePattern.test(firstNameInput.value.trim())) {
             firstNameError.textContent = "First Name should contain 2-30 characters";
             firstNameInput.style.border = "1px solid red";
             isValid = false;
@@ -368,7 +368,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const lastNamePattern = /^[A-Za-z]{2,30}(-[A-Za-z]{2,30})?$/;
         const lastNameError = document.getElementById('lastName-error');
 
-        if (!lastNamePattern.test(lastNameInput.value)) {
+        if (!lastNamePattern.test(lastNameInput.value.trim())) {
             lastNameError.textContent = "Last Name should contain 2-30 characters";
             lastNameInput.style.border = "1px solid red";
             isValid = false;
@@ -381,7 +381,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         const emailError = document.getElementById('email-error');
 
-        if (!emailPattern.test(emailInput.value)) {
+        if (!emailPattern.test(emailInput.value.trim())) {
             emailError.textContent = "Please enter a valid email";
             emailInput.style.border = "1px solid red";
             isValid = false;
@@ -391,10 +391,12 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         const telInput = document.getElementById('tel');
-        const telPattern = /^\+995 5\d{2} \d{2} \d{2} \d{2}$/;
+        const telPattern = /^(\+?995[-\s]?)?5\d{8}$/;
         const telError = document.getElementById('tel-error');
-
-        if (!telPattern.test(telInput.value)) {
+        
+        const trimmedValue = telInput.value.trim();
+        
+        if (!telPattern.test(trimmedValue)) {
             telError.textContent = "Please enter a valid phone number";
             telInput.style.border = "1px solid red";
             isValid = false;
@@ -402,7 +404,6 @@ document.addEventListener('DOMContentLoaded', function () {
             telError.textContent = "";
             telInput.style.border = "";
         }
-
         const resumeError = document.getElementById('resume-error');
         if (!resumeInput.files.length) {
             resumeError.textContent = "Please upload your resume";
