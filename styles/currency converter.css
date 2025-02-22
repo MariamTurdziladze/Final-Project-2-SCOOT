@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap");
 
 :root {
@@ -46,7 +45,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 1.5rem;
-  color: var(--green);
+  color: #fcb72b;
 }
 
 button {
@@ -127,7 +126,7 @@ button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--blue);
+  background: #fcb72b;
   color: var(--white);
   line-height: 1;
   box-shadow: 0 3px 5px var(--shadow-1);
@@ -139,7 +138,7 @@ button {
 }
 
 .swap-btn:hover {
-  background: var(--green);
+  background: #ffc859;
 }
 
 .swap-btn span {
@@ -157,7 +156,7 @@ button {
 
 .exchange-rate h5 {
   text-transform: uppercase;
-  color: var(--green);
+  color: #fcb72b;
 }
 
 .exchange-rate span {
