@@ -147,7 +147,7 @@
   flex-direction: column;
   gap: 24px;
 }
-#bg-top{
+#bg-top {
   top: 0px;
   left: 0;
   height: 100%;
@@ -297,9 +297,6 @@
   font-family: "Lexend Deca";
   font-size: 15px;
   line-height: 25px;
-}
-
-.footer {
 }
 
 .footer-top {
@@ -601,16 +598,16 @@
 
 @media only screen and (max-width: 768px) {
   .fb:hover svg path {
-    fill: #FCB72B;
+    fill: #fcb72b;
   }
   .twt:hover svg path {
-    fill: #FCB72B;
+    fill: #fcb72b;
   }
-  
+
   .ig:hover svg path {
-    fill: #FCB72B;
+    fill: #fcb72b;
   }
-  .btn:hover{
+  .btn:hover {
     background: #fcb72b;
     border: none;
     color: #fff;

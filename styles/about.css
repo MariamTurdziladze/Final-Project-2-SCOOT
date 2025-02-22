@@ -518,9 +518,6 @@
   transition: grid-template-rows 0.3s ease-out;
 }
 
-.footer {
-}
-
 .footer-top {
   display: flex;
   justify-content: space-between;
