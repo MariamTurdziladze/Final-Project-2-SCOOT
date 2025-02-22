@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ACCORDION
 document.body.addEventListener(`click`, (ev) => {
-    const isExpandableTitle = !!ev.target.closest(".accordion");  // mxolod titles magivrad mtliani boxia
+    const isExpandableTitle = !!ev.target.closest(".accordion");
     const expandable = ev.target.closest(".accordion");
 
     if (!isExpandableTitle) {
@@ -74,16 +74,15 @@ document.getElementById('bg').addEventListener('click', function () {
     toggleBtn.classList.remove("change");
 });
 
-// Currency Converter Modal
+
+// Currency Converter
 const converterModal = document.getElementById("converter-modal");
 const converterOpenBtn = document.getElementById("converter-open-btn");
 
-// Show the modal
 converterOpenBtn.addEventListener("click", () => {
   converterModal.style.display = "flex";
 });
 
-// Hide the modal when clicking outside the content
 converterModal.addEventListener("click", (e) => {
   if (e.target === converterModal) {
     converterModal.style.display = "none";
