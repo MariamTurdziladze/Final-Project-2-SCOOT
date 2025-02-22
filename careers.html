@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <link rel="stylesheet" href="./styles/currency converter.css">
     <script
         src="./converter.js"
       defer
@@ -29,7 +30,7 @@
             </div>
             
             <div class="header-right">
-                <button id="converter-open-btn" class="btn">Get Scootin</button>
+                <button class="btn">Get Scootin</button>
             </div>
         </div>
         <div class="header-hidden">
@@ -54,41 +55,40 @@
                 </a>
             </div>
         </div>
-        <!-- Currency Converter Modal -->
-<div id="converter-modal" class="currency-converter-modal">
-      <main>
-        <h1>Currency Converter</h1>
-        <div class="controls" id="controls">
-          <div class="control">
-            <button id="base" data-drawer>USD</button>
-            <input type="number" id="base-input" value="0" min="0" step="any" inputmode="decimal" />
-          </div>
-          <div class="control">
-            <button id="target" data-drawer>EUR</button>
-            <input type="number" id="target-input" value="0" readonly />
-          </div>
-          <button class="swap-btn" id="swap-btn">
-            <span class="material-symbols-outlined"> sync_alt </span>
-          </button>
+        <div id="converter-modal" class="currency-converter-modal">
+            <main>
+                <h1>Currency Converter</h1>
+                <div class="controls" id="controls">
+                <div class="control">
+                    <button id="base" data-drawer>USD</button>
+                    <input type="number" id="base-input" value="0" min="0" step="any" inputmode="decimal" />
+                </div>
+                <div class="control">
+                    <button id="target" data-drawer>EUR</button>
+                    <input type="number" id="target-input" value="0" readonly />
+                </div>
+                <button class="swap-btn" id="swap-btn">
+                    <span class="material-symbols-outlined"> sync_alt </span>
+                </button>
+                </div>
+                <div class="exchange-rate">
+                <h5>Exchange Rate</h5>
+                <span id="exchange-rate"></span>
+                </div>
+                <div class="drawer" id="drawer">
+                <div class="title">
+                    <button id="dismiss-btn">
+                    <span class="material-symbols-outlined"> west </span>
+                    </button>
+                    <h3>Select Currency</h3>
+                </div>
+                <div class="search">
+                    <input type="search" id="search" placeholder="Search" />
+                </div>
+                <ul class="currency-list" id="currency-list"></ul>
+                </div>
+            </main>
         </div>
-        <div class="exchange-rate">
-          <h5>Exchange Rate</h5>
-          <span id="exchange-rate"></span>
-        </div>
-        <div class="drawer" id="drawer">
-          <div class="title">
-            <button id="dismiss-btn">
-              <span class="material-symbols-outlined"> west </span>
-            </button>
-            <h3>Select Currency</h3>
-          </div>
-          <div class="search">
-            <input type="search" id="search" placeholder="Search" />
-          </div>
-          <ul class="currency-list" id="currency-list"></ul>
-        </div>
-      </main>
-  </div>
         <div class="page-title-box">
             <div class="page-title-content">
                 <div class="page-title">Careers</div>
@@ -100,8 +100,8 @@
             </div>
         </div>
         <div class="section1">
+            <button id="converter-open-btn" class="currency-converter-btn">Click Here To Open Currency Converter</button>
             <div class="section1-container">
-
                 <div class="section1-txts">
                     <div class="section1-h1">Care to join our mission?</div>
                     <div class="section1-h2">We’re always looking for ambitious individuals to help us on our journey.
